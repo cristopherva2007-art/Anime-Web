@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime UCR</title>
+    <meta name="description"
+        content="Base de datos indexada de estilos UI, paletas de colores y reglas de usabilidad para Claude Code.">
+
+    <link rel="icon" href="logo_anime.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://wallpaperaccess.com/full/1078997.jpg"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['DM Sans', 'sans-serif'],
+                        heading: ['Space Grotesk', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-[#050a05] text-slate-100 font-sans antialiased selection:bg-green-500/30 selection:text-green-300">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#050a05]/85 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-2">
+                   <div
+    class="w-10 h-10 rounded-xl bg-green-500 flex items-center justify-center border border-green-400/30 shadow-[0_0_15px_rgba(0,255,136,0.3)] overflow-hidden">
+    <img src="logo_anime.svg"
+         alt="Logo Anime"
+         class="w-8 h-8 object-contain">
+</div>
+                    <span class="text-xl font-heading font-bold text-white tracking-tight">Flor de Cerezo - Anime</span>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#nosotros"
+                        class="text-slate-400 hover:text-green-400 transition-colors font-medium text-sm">Empresa</a>
+                    <a href="#proyectos"
+                        class="text-slate-400 hover:text-green-400 transition-colors font-medium text-sm">Generos</a>
+                    <a href="#servicios"
+                        class="text-slate-400 hover:text-green-400 transition-colors font-medium text-sm">Premium</a>
+                    <a href="#contacto"
+                        class="text-slate-400 hover:text-green-400 transition-colors font-medium text-sm">Comunicacion</a>
+                </div>
+                <div class="hidden md:flex items-center gap-4">
+                    <button class="text-slate-400 hover:text-white text-sm font-medium transition-colors">Iniciar
+                        sesión</button>
+                    <a href="#contacto"
+                        class="bg-green-500 hover:bg-green-600 text-white font-semibold text-sm py-2.5 px-5 rounded-xl transition-all shadow-lg shadow-green-500/20">Contáctenos</a>
+                </div>
+                <button class="md:hidden p-2 text-slate-400 hover:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center pt-16 overflow-hidden bg-[#050a05]">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-20 right-10 w-72 h-72 rounded-full bg-cyan-500/10 blur-[100px]"></div>
+            <div class="absolute bottom-20 left-10 w-96 h-96 rounded-full bg-green-500/5 blur-[120px]"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div
+                        class="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 rounded-full px-4 py-1.5 text-xs text-green-400 font-medium mb-6">
+                        <span>🚀</span><span>Esta Web fue decorada por estudiantes de la UCR @ 24/06/2026 </span>
+                    </div>
+                    <h1
+                        class="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white mb-6 leading-tight">
+                        Hoy es el dia de ver anime...<span class="gradient-text"> Con esta web puedes ver cualquier
+                            anime</span>
+                    </h1>
+                    <p class="text-lg text-slate-400 mb-8 max-w-xl leading-relaxed">
+                        "Convierte un mal rato en un momento unico para ver tu anime favorito. ¡Únete!"
+                        "Las grandes historias empiezan con un click"
+                        <br>
+                        Con generos como:
+                        <br>
+                        -Shōnen
+                        <br>
+                        -Shōjo
+                        <br>
+                        -Seinen
+                        <br>
+                        -Josei
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                        <button
+                            class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg shadow-green-500/20">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            Inicializar Cartelera de Anime
+                        </button>
+                        <button
+                            class="bg-slate-900 hover:bg-slate-800 text-slate-300 font-semibold py-3 px-6 rounded-xl border border-slate-800 transition-all">Ver
+                            Documentación</button>
+                    </div>
+                    <div class="flex flex-wrap gap-8 border-t border-[#0d1a0d] pt-8">
+                        <div>
+                            <div class="text-3xl font-heading font-extrabold text-white">+100</div>
+                            <div class="text-xs text-slate-500 uppercase tracking-wider mt-1">Estilos UI Listos en tan solo unos dias</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-heading font-extrabold text-green-400">+95</div>
+                            <div class="text-xs text-slate-500 uppercase tracking-wider mt-1">Paletas de Color</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-heading font-extrabold text-cyan-400">+56</div>
+                            <div class="text-xs text-slate-500 uppercase tracking-wider mt-1">Codigos distintos para cada cliente</div>
+                        </div>
+                         <div>
+                            <div class="text-3xl font-heading font-extrabold text-cyan-400">+1000</div>
+                            <div class="text-xs text-slate-500 uppercase tracking-wider mt-1">Animes | Variedad de animes</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ✅ CAMBIO: se eliminaron los dos div flotantes con cuadros vacíos -->
+                <!-- ✅ CAMBIO: se quitó mix-blend-luminosity y se subió opacity a 95 -->
+                <div class="relative">
+                    <div class="clay-card hero-image-card p-4 rounded-2xl overflow-hidden border border-slate-800">
+                        <img src="https://wallpaperaccess.com/full/1078997.jpg"
+                            alt="Abstract Code Background"
+                            class="hero-img w-full h-[400px] object-cover rounded-xl">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="py-20 sm:py-28 bg-[#070d07]/60 border-y border-[#0d1a0d]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 feature-section-header">
+                <div
+                    class="inline-flex items-center bg-cyan-500/10 border border-cyan-500/20 rounded-full px-4 py-1 text-xs text-cyan-400 font-medium mb-4 feature-badge">
+                    <span>⚡</span><span>Características Principales</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-heading font-bold mb-4 feature-title">Todo lo que necesitas saber acerca de nosotros</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto text-sm sm:text-base">Guias de estetica mejoradas en cada pagina creada.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div
+                    class="feature-card feature-card--orange bg-slate-900/60 border border-slate-800 p-6 rounded-2xl group">
+                    <div class="feature-card__scan"></div>
+                    <div class="feature-card__glow"></div>
+                    <div
+                        class="feature-card__icon w-12 h-12 rounded-xl bg-green-500/10 flex items-center justify-center text-2xl mb-4">
+                        🤖</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Estilos Arquitectónicos UI</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Estructuras hechas totalmente por nuestro personal, pero finalmente mejorada con IA+.</p>
+                    <div class="flex items-center justify-between pt-2 border-t border-slate-800/60">
+                        <span class="text-xs font-mono text-green-400">+57 Estilos Incluidos</span>
+                        <button
+                            class="text-xs font-bold text-slate-400 group-hover:text-white flex items-center gap-1">Ver
+                            Tokens →</button>
+                    </div>
+                </div>
+                <div
+                    class="feature-card feature-card--purple bg-slate-900/60 border border-slate-800 p-6 rounded-2xl group">
+                    <div class="feature-card__scan"></div>
+                    <div class="feature-card__glow"></div>
+                    <div
+                        class="feature-card__icon w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-2xl mb-4">
+                        📲</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Sistemas disenados completamente funcionales</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Un diseno web correcto.</p>
+                    <div class="flex items-center justify-between pt-2 border-t border-slate-800/60">
+                        <span class="text-xs font-mono text-cyan-400">+300 lineas de codigo depuradas</span>
+                        <button
+                            class="text-xs font-bold text-slate-400 group-hover:text-white flex items-center gap-1">Ver
+                            Tokens →</button>
+                    </div>
+                </div>
+                <div
+                    class="feature-card feature-card--blue bg-slate-900/60 border border-slate-800 p-6 rounded-2xl group">
+                    <div class="feature-card__scan"></div>
+                    <div class="feature-card__glow"></div>
+                    <div
+                        class="feature-card__icon w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-2xl mb-4">
+                        ☎️</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Nuestras paginas de desarrollo</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Intentamos hacer sistemas visualmente llamativos para ustedes.</p>
+                    <div class="flex items-center justify-between pt-2 border-t border-slate-800/60">
+                        <span class="text-xs font-mono text-blue-400">Mas de 50 tipos de programas funcionales</span>
+                        <button
+                            class="text-xs font-bold text-slate-400 group-hover:text-white flex items-center gap-1">Ver
+                            Paginas →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="py-20 sm:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <div
+                class="inline-flex items-center bg-green-500/10 border border-green-500/20 rounded-full px-4 py-1 text-xs text-green-400 font-medium mb-4">
+                <span>⚡</span><span>TOP#3</span>
+            </div>
+            <h2 class="text-3xl font-heading font-bold text-white mb-4">Los mas estrenados...</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto text-sm">Animes de la mejor calidad, 
+                para pasar el tiempo en familia de la mejor manera</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="gallery-card bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden cursor-pointer">
+                <div class="aspect-square overflow-hidden bg-[#050a05] relative">
+                    <img src="https://freakelitex.com/wp-content/uploads/2023/12/Modos-juego-Jujutsu-Kaisen-Cursed-Clash-modos-de-juego-1021x580.jpg"
+                        alt="Dashboard UI" class="gallery-card__img w-full h-full object-cover opacity-60">
+                    <div class="gallery-card__overlay absolute inset-0 pointer-events-none"></div>
+                </div>
+                <div class="p-4">
+                    <h3 class="gallery-card__title font-bold text-white text-sm sm:text-base">Jujutsu Kaisen</h3>
+                    <p class="gallery-card__tag text-xs text-slate-500 font-mono mt-1">Shōnen / Fantasia Oscura</p>
+                </div>
+            </div>
+            <div class="gallery-card bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden cursor-pointer">
+                <div class="aspect-square overflow-hidden bg-[#050a05] relative">
+                    <img src="https://preview.redd.it/is-it-worth-to-watch-vinland-saga-now-after-aot-v0-jqtk0jyi2hgf1.jpeg?width=640&crop=smart&auto=webp&s=b856a17e78fb47345d13c6b2c6454b3cf02d4162"
+                        alt="Dashboard UI" class="gallery-card__img w-full h-full object-cover opacity-60">
+                    <div class="gallery-card__overlay absolute inset-0 pointer-events-none"></div>
+                </div>
+                <div class="p-4">
+                    <h3 class="gallery-card__title font-bold text-white text-sm sm:text-base">Vinland Saga</h3>
+                    <p class="gallery-card__tag text-xs text-slate-500 font-mono mt-1">Shōnen / Madurez propia</p>
+                </div>
+            </div>
+              <div class="gallery-card bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden cursor-pointer">
+                <div class="aspect-square overflow-hidden bg-[#050a05] relative">
+                    <img src="https://preview.redd.it/draw-by-me-just-completed-my-first-solo-leveling-sung-jin-v0-5okcnqdlhldc1.jpeg?width=1080&crop=smart&auto=webp&s=8d623063e55e2e8195788e6b1eedb6b0b64b3203"
+                        alt="Dashboard UI" class="gallery-card__img w-full h-full object-cover opacity-60">
+                    <div class="gallery-card__overlay absolute inset-0 pointer-events-none"></div>
+                </div>
+                <div class="p-4">
+                    <h3 class="gallery-card__title font-bold text-white text-sm sm:text-base">Solo Leveling</h3>
+                    <p class="gallery-card__tag text-xs text-slate-500 font-mono mt-1">Shōnen / Fantasia</p>
+                </div>
+            </div>
+              <div class="gallery-card bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden cursor-pointer">
+                <div class="aspect-square overflow-hidden bg-[#050a05] relative">
+                    <img src="https://m.media-amazon.com/images/M/MV5BOWE2OTJkNzAtZWU1NC00YmQyLTk5ZWMtNzQ4MjQyZTI5YjhlXkEyXkFqcGc@._V1_.jpg"
+                        alt="Dashboard UI" class="gallery-card__img w-full h-full object-cover opacity-60">
+                    <div class="gallery-card__overlay absolute inset-0 pointer-events-none"></div>
+                </div>
+                <div class="p-4">
+                    <h3 class="gallery-card__title font-bold text-white text-sm sm:text-base">Espiritu de lucha</h3>
+                    <p class="gallery-card__tag text-xs text-slate-500 font-mono mt-1">Shōnen / Boxeo</p>
+                </div>
+            </div>
+            <div class="gallery-card bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden cursor-pointer">
+                <div class="aspect-square overflow-hidden bg-[#050a05] relative">
+                    <img src="https://p4.wallpaperbetter.com/wallpaper/597/777/75/anime-berserk-2016-guts-berserk-wallpaper-preview.jpg"
+                        alt="Fintech Wireframe" class="gallery-card__img w-full h-full object-cover opacity-60">
+                    <div class="gallery-card__overlay absolute inset-0 pointer-events-none"></div>
+                </div>
+                <div class="p-4">
+                    <h3 class="gallery-card__title font-bold text-white text-sm sm:text-base">Berserk
+                    </h3>
+                    <p class="gallery-card__tag text-xs text-slate-500 font-mono mt-1">Seinen / Accion</p>
+                </div>
+            </div>
+            <div class="gallery-card bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden cursor-pointer">
+                <div class="aspect-square overflow-hidden bg-[#050a05] relative">
+                    <img src="https://wallpapercave.com/wp/wp9329070.jpg"
+                        alt="Swiss Layout" class="gallery-card__img w-full h-full object-cover opacity-60">
+                    <div class="gallery-card__overlay absolute inset-0 pointer-events-none"></div>
+                </div>
+                <div class="p-4">
+                    <h3 class="gallery-card__title font-bold text-white text-sm sm:text-base">SNK
+                    </h3>
+                    <p class="gallery-card__tag text-xs text-slate-500 font-mono mt-1">Shōnen / Drama posapocalíptico</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-20 sm:py-28 bg-[#070d07]/60 border-y border-[#0d1a0d]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div
+                    class="inline-flex items-center bg-green-500/10 border border-green-500/20 rounded-full px-4 py-1 text-xs text-green-400 font-medium mb-4">
+                    <span>💰</span><span>Licenciamiento Didáctico</span>
+                </div>
+                <h2 class="text-3xl font-heading font-bold text-white mb-4">Planes de Acceso Flexibles para Disfrutar al Maximo</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto text-sm">Escala al maximo tus gustos de animes, visualiza lo que te encanta
+                    y disfrutalo seguramente.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto items-start">
+                <div class="pricing-card bg-slate-900/60 border border-slate-800 rounded-2xl p-6 cursor-pointer">
+                    <div class="pricing-card__icon text-3xl mb-4">💻</div>
+                    <h3 class="pricing-card__title text-xl font-bold text-white mb-1">Gratuito</h3>
+                    <p class="text-xs text-slate-400 mb-6 font-medium">Uso individual</p>
+                    <div class="mb-6"><span class="text-4xl font-heading font-extrabold text-white">$0</span><span
+                            class="text-slate-500 text-sm"> / siempre gratis</span></div>
+                    <ul class="space-y-3 mb-8 text-sm text-slate-400">
+                        <li class="flex items-center gap-2.5"><span class="text-green-400 text-xs">✓</span>Uso de vista limitado</li>
+                        <li class="flex items-center gap-2.5"><span class="text-green-400 text-xs">✓</span>Anuncios incluidos
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full py-3 rounded-xl font-bold text-sm bg-slate-800 text-slate-200 border border-slate-700 hover:border-slate-600 transition-all">Empezar
+                        Local</button>
+                </div>
+                <div
+                    class="pricing-card pricing-card--featured bg-slate-900 border-2 border-green-400 rounded-2xl p-6 relative shadow-[0_0_30px_rgba(0,255,136,0.1)] cursor-pointer">
+                    <div
+                        class="absolute -top-3 left-1/2 -translate-x-1/2 bg-green-400 text-black font-bold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full">
+                        Recomendado</div>
+                    <div class="pricing-card__icon text-3xl mb-4">🚀</div>
+                    <h3 class="pricing-card__title text-xl font-bold text-white mb-1">Pro Otaku</h3>
+                    <p class="text-xs text-slate-400 mb-6 font-medium">Vista mejorada Full HD</p>
+                    <div class="mb-6"><span class="text-4xl font-heading font-extrabold text-white">$49</span><span
+                            class="text-slate-500 text-sm"> / mes aula</span></div>
+                    <ul class="space-y-3 mb-8 text-sm text-slate-300">
+                        <li class="flex items-center gap-2.5"><span class="text-green-400 text-sm">✓</span>Acceso
+                            multi-usuario simultáneo</li>
+                        <li class="flex items-center gap-2.5"><span class="text-green-400 text-sm">✓</span>Generador
+                            Avanzado de Gráficas Animadas</li>
+                    </ul>
+                    <button
+                        class="w-full py-3 rounded-xl font-bold text-sm bg-green-500 hover:bg-green-600 text-white transition-all shadow-lg shadow-green-500/10">Adquirir
+                        Licencia Super Otaku</button>
+                </div>
+                <div class="pricing-card bg-slate-900/60 border border-slate-800 rounded-2xl p-6 cursor-pointer">
+                    <div class="pricing-card__icon text-3xl mb-4">👑</div>
+                    <h3 class="pricing-card__title text-xl font-bold text-white mb-1">Familiar de Otakus</h3>
+                    <p class="text-xs text-slate-400 mb-6 font-medium">Modelos de Anime para hasta 6 personas</p>
+                    <div class="mb-6"><span class="text-4xl font-heading font-extrabold text-white">$99</span><span
+                            class="text-slate-500 text-sm"> / mensual</span></div>
+                    <ul class="space-y-3 mb-8 text-sm text-slate-400">
+                        <li class="flex items-center gap-2.5"><span class="text-green-400 text-xs">✓</span>Todo lo
+                            incluido en Pro</li>
+                        <li class="flex items-center gap-2.5"><span class="text-green-400 text-xs">✓</span>Estrenos totalmente disponibles</li>
+                    </ul>
+                    <button
+                        class="w-full py-3 rounded-xl font-bold text-sm bg-slate-800 text-slate-200 border border-slate-700 hover:border-slate-600 transition-all">Contactar
+                        nuestro Soporte</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-20 sm:py-28 bg-[#070d07]/60 border-t border-[#0d1a0d]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div
+                        class="inline-flex items-center bg-green-500/10 border border-green-500/20 rounded-full px-4 py-1 text-xs text-green-400 font-medium mb-6">
+                        <span>📅</span><span>Unirse a nosotros</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-white mb-4">¿Ready para la mejor pagina de anime?</h2>
+                    <p class="text-slate-400 text-sm sm:text-base mb-8 leading-relaxed">Danos la confianza de entrar a tu hogar por medio 
+                        del mejor contenido de anime mas actualizado y reproduccion estable
+                    </p>
+                </div>
+                <div class="clay-card p-6 sm:p-8 rounded-2xl border border-slate-800">
+                    <h3 class="text-xl font-heading font-bold text-white mb-6">Registro de plan Otaku</h3>
+                    <form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Simulación Exitosa!');">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label
+                                    class="block text-xs font-semibold text-slate-400 mb-2 uppercase tracking-wide">Nombre
+                                    del Otaku</label>
+                                <input type="text" placeholder="Tu Nombre"
+                                    class="w-full bg-[#050a05] border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-green-500 transition-colors">
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-xs font-semibold text-slate-400 mb-2 uppercase tracking-wide">Identificación
+                                    ID</label>
+                                <input type="text" placeholder="UCR-001"
+                                    class="w-full bg-[#050a05] border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-green-500 transition-colors">
+                            </div>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3.5 px-6 rounded-xl mt-4 transition-all shadow-lg shadow-green-500/20">Vincular
+                            Repositorio 🚀</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer
+        class="fixed bottom-0 left-0 right-0 z-50 bg-[#050a05]/70 backdrop-blur-md border-t border-slate-800/60 py-5 text-center text-xs text-slate-400 font-medium tracking-wide">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-2">
+            <p>© 2026 Trabajo en clase | Equipo ? | UCR Desarrollo de Software III.</p>
+            <div class="flex gap-6 text-slate-500">
+                <a href="#" class="hover:text-white transition-colors">Privacidad</a>
+                <a href="#" class="hover:text-white transition-colors">Términos</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.gallery-card, .pricing-card').forEach(function (card) {
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+            observer.observe(card);
+        });
+
+        // Feature section header — entrada al hacer scroll
+        (function () {
+            var header = document.querySelector('.feature-section-header');
+            if (!header) return;
+            var obs = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+            obs.observe(header);
+        }());
+
+        // Feature cards — entrada escalonada + tilt 3D + spotlight de cursor
+        document.querySelectorAll('.feature-card').forEach(function (card) {
+            // Entrada con IntersectionObserver
+            var entryObs = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        entryObs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+            entryObs.observe(card);
+
+            var glow = card.querySelector('.feature-card__glow');
+
+            // Tilt 3D suave + spotlight que sigue el cursor
+            card.addEventListener('mousemove', function (e) {
+                var rect = card.getBoundingClientRect();
+                var x = e.clientX - rect.left;
+                var y = e.clientY - rect.top;
+                var cx = rect.width / 2;
+                var cy = rect.height / 2;
+                var rotX = ((y - cy) / cy) * -6;
+                var rotY = ((x - cx) / cx) * 6;
+                card.style.transform =
+                    'translateY(-10px) perspective(900px) rotateX(' + rotX + 'deg) rotateY(' + rotY + 'deg)';
+                if (glow) {
+                    glow.style.left = x + 'px';
+                    glow.style.top = y + 'px';
+                }
+            });
+
+            // Restablece al salir el cursor
+            card.addEventListener('mouseleave', function () {
+                card.style.transform = '';
+            });
+        });
+    </script>
+
+</body>
+
+</html>

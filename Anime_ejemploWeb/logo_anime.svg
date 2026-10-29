@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff77ff"/>
+      <stop offset="100%" stop-color="#7a00ff"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="256" cy="256" r="210" fill="#0b0b14"/>
+  <circle cx="256" cy="256" r="235" fill="none" stroke="#7a00ff" stroke-width="18"/>
+
+  <path d="M120 405 C170 340, 230 300, 330 250"
+        fill="none" stroke="white" stroke-width="12" stroke-linecap="round"/>
+
+  <path d="M360 170 L420 110 L450 140 L390 200 Z"
+        fill="white"/>
+
+  <text x="256" y="300"
+        text-anchor="middle"
+        font-size="170"
+        font-family="serif"
+        font-weight="bold"
+        fill="url(#g)">桜</text>
+
+  <g fill="#ff9cff">
+    <circle cx="105" cy="180" r="10"/>
+    <circle cx="95" cy="250" r="12"/>
+    <circle cx="180" cy="390" r="12"/>
+    <circle cx="230" cy="410" r="10"/>
+  </g>
+
+  <g transform="translate(95,350)">
+    <ellipse cx="0" cy="0" rx="25" ry="40" fill="#ff9cff"/>
+    <ellipse cx="35" cy="0" rx="25" ry="40" fill="#ff9cff"/>
+    <ellipse cx="17" cy="-30" rx="25" ry="40" fill="#ff9cff"/>
+    <ellipse cx="17" cy="30" rx="25" ry="40" fill="#ff9cff"/>
+    <circle cx="17" cy="0" r="8" fill="#111"/>
+  </g>
+</svg>
